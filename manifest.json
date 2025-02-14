@@ -1,0 +1,27 @@
+{
+  "name": "Speedometer Progressive Web App",
+  "short_name": "Speedometer",
+  "description": "A progressive speedometer that can be uploaded to any device. Hey Mark, this is an easter egg for you :) ",
+  "icons": [
+    {
+      "src": "icons/speedo.jpg",
+      "sizes": "32x32",
+      "type": "image/jpeg"
+    },
+    {
+             "src": "icons/speedo.jpg",
+             "sizes": "192x192",
+             "type": "image/jpeg"
+           },
+       {
+             "src": "icons/speedo.jpg",
+             "sizes": "512x512",
+             "type": "image/jpeg"
+           }
+  ],
+    "start_url": "https://devweb2024.cis.strath.ac.uk/~qrb23133/abracadabra123/index.html",
+  "display": "fullscreen",
+  "theme_color": "#0e0e0e",
+  "background_color": "#0e0e0e",
+    "orientation": "portrait"
+}

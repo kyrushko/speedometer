@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAD1 Speedometer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<!--    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://devweb2024.cis.strath.ac.uk;">-->
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="block">
+<!--    <meta name="apple-mobile-web-app-title" content="Speedometer">-->
+<!--    <link rel="stylesheet" href="">-->
+</head>
+<body>
+<div class="mainContent">
+    <header>
+        <p>Speedometer</p>
+    </header>
+    <main>
+
+        <p id="speed"></p>
+        <p id="unit"></p>
+        <p id="street"></p>
+    </main>
+        <div class="content">
+            <div class="speed" id="speedLimit">--</div>
+        </div>
+
+
+</div>
+<div class="settings">
+    <div class="mainLabel"><h1>Settings</h1></div>
+    <div class="centerThings">
+        <div>Speed unit settings</div>
+        <select id="speedUnit">
+            <option value="mph" >MPH</option>
+            <option value="kmph" >KM/H</option>
+            <option value="local">Local units</option>
+        </select>
+    </div>
+
+    <div class="centerThings">
+        <label for="bgColor">Background color:</label>
+        <input type="color" id="bgColor">
+    </div>
+
+    <div class="centerThings">
+        <label for="speedColor">Speed color:</label>
+        <input type="color" id="speedColor" value="#ffffff">
+    </div>
+    <div class="centerThings">
+        <label for="unitColor">Units color:</label>
+        <input type="color" id="unitColor" value="#ffffff">
+    </div>
+    <div class="centerThings">
+        <label for="streetColor">Street name color:</label>
+        <input type="color" id="streetColor" value="#ffffff">
+    </div>
+
+    <div class="centerThings">
+        <label for="bgImage">Background Image:</label>
+        <input type="file" id="bgImage" accept="image/*">
+    </div>
+
+    <div class="centerThings">
+        <!-- Speed Limit Position -->
+        <label for="speedPosition">Speed Limit Position:</label>
+        <select id="speedPosition">
+            <option value="left">Bottom Left</option>
+            <option value="right" selected>Bottom Right</option>
+        </select>
+    </div>
+    <button onclick="tracker.saveSettings()">Apply settings</button>
+    <button onclick="tracker.resetSettings()">Reset settings</button>
+    <p id="settingsStatus"></p> <!-- Status message -->
+</div>
+<footer>
+    <div id="foot">Nikita Kyrushko</div>
+</footer>
+<script src="./speed.js"></script>
+</body>
+</html>

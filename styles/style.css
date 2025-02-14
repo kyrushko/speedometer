@@ -1,0 +1,122 @@
+#speed{
+        text-align: center;
+        font-size: 13vh;
+        margin: 0 auto;
+        max-width: 100%;
+        font-family: "IBM Plex Mono", monospace !important;
+        font-weight: 200;
+        font-style: normal;
+    }
+    #unit{
+        font-size: 2vh;
+    }
+    header p {
+        text-align: center;
+    }
+
+
+    body {
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        background-color: #0e0e0e;
+        color: white;
+        text-align: center;
+        font-size: 2.5vh;
+        width: 100vw;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        /*background-size: cover;*/
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+
+.content {
+    position: fixed; /* Keeps it in place */
+    bottom: 2em;
+    right: max(2em, 5%); /* Ensures it doesn't overflow on smaller screens */
+    background-color: darkred;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: calc(100vw - 4em); /* Ensures it doesn't exceed the screen width */
+    overflow: hidden; /* Prevents any extra content from causing a scrollbar */
+}
+
+    .speed {
+        background: whitesmoke;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .settings {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; /* Distribute elements evenly */
+        align-items: stretch; /* Make elements align with border */
+        gap: 3vh; /* Remove extra gap */
+        max-width: 100vw;
+        margin: 0 auto;
+        width: 40%;
+        height: 100%; /* Ensures full height for even spacing */
+        padding: 5vh 0; /* Adds padding so items don't touch the border */
+        box-sizing: border-box;
+    }
+    .mainLabel{
+        text-align: center;
+    }
+    #foot{
+        font-family: "IBM Plex Mono", monospace !important;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .centerThings {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100vw;
+    }
+
+    .mainContent{
+        /*display: none;*/
+    }
+    @media (max-width: 700px) {
+        .settings {
+            width: 80%;
+            /*margin: 0 auto; */
+        }
+    }
+    @media (max-width: 900px) {
+        .settings {
+            width: 80%;
+            /*margin: 0 auto; */
+        }
+    }
+    @media (min-width: 1200px) and (max-width: 2000px) {
+        .settings {
+            width: 27%;
+            /*margin: 0 auto;*/
+        }
+    }
+
+
+
+/**/
